@@ -11,7 +11,10 @@ class User extends Model{
     protected $table = 'userinfo';
     // column sa table
     protected $fillable = [
-    'userid','fname','lname','username','password','status'
+    'fname','lname','username','password','status'
     ];
+
+    public $timestamps = false;
+    protected $primaryKey = 'userid';
 
 }
