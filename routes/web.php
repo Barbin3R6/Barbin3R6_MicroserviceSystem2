@@ -25,3 +25,6 @@ $router->get('/users/{id}','UserController@show');
 $router->put('/users/{id}','UserController@update');
 $router->patch('/users/{id}','UserController@update');
 $router->delete('/users/{id}','UserController@delete');
+
+$router->get('/usersjob', 'UserJobController@index');
+$router->get('/userjob/{id}', 'UserJobController@show'); //get user by id
